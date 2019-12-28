@@ -13,6 +13,9 @@
 		F26646C523B744B00037339F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F26646C423B744B00037339F /* Assets.xcassets */; };
 		F26646C823B744B00037339F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F26646C723B744B00037339F /* Preview Assets.xcassets */; };
 		F26646CB23B744B00037339F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F26646C923B744B00037339F /* LaunchScreen.storyboard */; };
+		F26646D323B7451B0037339F /* WorldClockListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26646D223B7451B0037339F /* WorldClockListView.swift */; };
+		F26646D523B747590037339F /* TimeZoneListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26646D423B747590037339F /* TimeZoneListItemView.swift */; };
+		F26646D723B74EBC0037339F /* TimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26646D623B74EBC0037339F /* TimeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		F26646C723B744B00037339F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F26646CA23B744B00037339F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F26646CC23B744B00037339F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F26646D223B7451B0037339F /* WorldClockListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldClockListView.swift; sourceTree = "<group>"; };
+		F26646D423B747590037339F /* TimeZoneListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeZoneListItemView.swift; sourceTree = "<group>"; };
+		F26646D623B74EBC0037339F /* TimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,9 @@
 		F26646BD23B744AE0037339F /* CopyClock */ = {
 			isa = PBXGroup;
 			children = (
+				F26646D223B7451B0037339F /* WorldClockListView.swift */,
+				F26646D423B747590037339F /* TimeZoneListItemView.swift */,
+				F26646D623B74EBC0037339F /* TimeView.swift */,
 				F26646BE23B744AE0037339F /* AppDelegate.swift */,
 				F26646C023B744AE0037339F /* SceneDelegate.swift */,
 				F26646C223B744AE0037339F /* ContentView.swift */,
@@ -146,9 +155,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F26646D323B7451B0037339F /* WorldClockListView.swift in Sources */,
+				F26646D523B747590037339F /* TimeZoneListItemView.swift in Sources */,
 				F26646BF23B744AE0037339F /* AppDelegate.swift in Sources */,
 				F26646C123B744AE0037339F /* SceneDelegate.swift in Sources */,
 				F26646C323B744AE0037339F /* ContentView.swift in Sources */,
+				F26646D723B74EBC0037339F /* TimeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

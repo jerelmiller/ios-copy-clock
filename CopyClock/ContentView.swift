@@ -9,13 +9,46 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        Text("Hello, World!")
+  let date = Date()
+
+  var body: some View {
+    TabView {
+      WorldClockListView(date: self.date, timeZones: [TimeZone.current])
+        .tabItem {
+          Image(systemName: "globe")
+          Text("World Clock")
+        }
+
+      Text("Alarm")
+        .tabItem {
+          Image(systemName: "alarm.fill")
+          Text("Alarm")
+        }
+      
+      Text("Bedtime")
+        .tabItem {
+          Image(systemName: "bed.double.fill")
+          Text("Alarm")
+      }
+      
+      Text("Stopwatch")
+        .tabItem {
+          Image(systemName: "stopwatch.fill")
+          Text("Alarm")
+      }
+      
+      Text("Timer")
+        .tabItem {
+          Image(systemName: "timer")
+          Text("Alarm")
+      }
     }
+    .accentColor(Color.orange)
+  }
 }
 
 struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
+  static var previews: some View {
+    ContentView().environment(\.colorScheme, .dark)
+  }
 }

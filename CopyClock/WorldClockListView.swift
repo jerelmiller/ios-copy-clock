@@ -25,7 +25,7 @@ struct WorldClockListView: View {
             ForEach(timeZones, id: \.self) { timeZone in
               TimeZoneListItemView(date: self.date, timeZone: timeZone)
             }
-            .onDelete(perform: removeTimeZone)
+            .onDelete(perform: removeTimeZones)
           }
         } else {
           VStack {
@@ -53,7 +53,7 @@ struct WorldClockListView: View {
     }
   }
   
-  func removeTimeZone(at offsets: IndexSet) {
+  func removeTimeZones(at offsets: IndexSet) {
     timeZones.remove(atOffsets: offsets)
   }
 }

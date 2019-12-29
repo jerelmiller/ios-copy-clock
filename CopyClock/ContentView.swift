@@ -18,7 +18,7 @@ struct ContentView: View {
       WorldClockListView(
         date: self.now,
         timeZones: $timeZones,
-        onSelect: { timeZone in self.timeZones.append(timeZone) }
+        onSelect: { self.timeZones.append($0) }
       )
         .tabItem {
           Image(systemName: "globe")
@@ -34,19 +34,19 @@ struct ContentView: View {
       Text("Bedtime")
         .tabItem {
           Image(systemName: "bed.double.fill")
-          Text("Alarm")
+          Text("Bedtime")
       }
       
       Text("Stopwatch")
         .tabItem {
           Image(systemName: "stopwatch.fill")
-          Text("Alarm")
+          Text("Stopwatch")
       }
       
       Text("Timer")
         .tabItem {
           Image(systemName: "timer")
-          Text("Alarm")
+          Text("Timer")
       }
     }
     .accentColor(Color.orange)

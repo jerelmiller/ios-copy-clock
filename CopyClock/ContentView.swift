@@ -15,7 +15,7 @@ struct ContentView: View {
 
   var body: some View {
     TabView {
-      WorldClockListView(
+      WorldClockView(
         date: self.now,
         timeZones: $timeZones,
         onSelect: { self.timeZones.append($0) }

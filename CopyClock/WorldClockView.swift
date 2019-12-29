@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct WorldClockListView: View {
+struct WorldClockView: View {
   let date: Date
   
   @Binding var timeZones: [TimeZone]
@@ -58,11 +58,11 @@ struct WorldClockListView: View {
   }
 }
 
-struct WorldClockListView_Previews: PreviewProvider {
+struct WorldClockView_Previews: PreviewProvider {
   static var previews: some View {
     Group {
-      WorldClockListView(date: Date(), timeZones: .constant([]), onSelect: { _ in })
-      WorldClockListView(
+      WorldClockView(date: Date(), timeZones: .constant([]), onSelect: { _ in })
+      WorldClockView(
         date: Date(),
         timeZones: .constant([
           TimeZone.current,

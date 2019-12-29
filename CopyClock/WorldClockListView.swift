@@ -10,10 +10,13 @@ import SwiftUI
 
 struct WorldClockListView: View {
   let date: Date
-  let timeZones: [TimeZone]
+  
+  @Binding var timeZones: [TimeZone]
+  
+  let onSelect: (TimeZone) -> Void
   
   @State private var showingTimeZones = false
-  
+
   var body: some View {
     NavigationView {
       Group {
@@ -22,6 +25,7 @@ struct WorldClockListView: View {
             ForEach(timeZones, id: \.self) { timeZone in
               TimeZoneListItemView(date: self.date, timeZone: timeZone)
             }
+            .onDelete(perform: removeTimeZone)
           }
         } else {
           VStack {
@@ -43,17 +47,29 @@ struct WorldClockListView: View {
         }
       )
       .sheet(isPresented: $showingTimeZones) {
-        Text("Hi")
+        TimeZoneSelectionView(onSelect: self.onSelect)
+          .accentColor(Color.orange)
       }
     }
+  }
+  
+  func removeTimeZone(at offsets: IndexSet) {
+    timeZones.remove(atOffsets: offsets)
   }
 }
 
 struct WorldClockListView_Previews: PreviewProvider {
   static var previews: some View {
     Group {
-      WorldClockListView(date: Date(), timeZones: [])
-      WorldClockListView(date: Date(), timeZones: [TimeZone.current])
+      WorldClockListView(date: Date(), timeZones: .constant([]), onSelect: { _ in })
+      WorldClockListView(
+        date: Date(),
+        timeZones: .constant([
+          TimeZone.current,
+          TimeZone(identifier: "Australia/Adelaide")!
+        ]),
+        onSelect: { _ in }
+      )
     }
     .accentColor(Color.orange)
   }

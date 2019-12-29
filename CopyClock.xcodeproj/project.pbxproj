@@ -16,6 +16,10 @@
 		F26646D323B7451B0037339F /* WorldClockListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26646D223B7451B0037339F /* WorldClockListView.swift */; };
 		F26646D523B747590037339F /* TimeZoneListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26646D423B747590037339F /* TimeZoneListItemView.swift */; };
 		F26646D723B74EBC0037339F /* TimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26646D623B74EBC0037339F /* TimeView.swift */; };
+		F26646DB23B75F590037339F /* TimeZoneSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26646DA23B75F590037339F /* TimeZoneSelectionView.swift */; };
+		F26646DD23B76B730037339F /* TimeZone+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26646DC23B76B730037339F /* TimeZone+Extensions.swift */; };
+		F26646DF23B818010037339F /* SearchField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26646DE23B818010037339F /* SearchField.swift */; };
+		F2B8421923B8309B004FAC3F /* TimeZone+Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B8421823B8309B004FAC3F /* TimeZone+Identifiable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +34,10 @@
 		F26646D223B7451B0037339F /* WorldClockListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldClockListView.swift; sourceTree = "<group>"; };
 		F26646D423B747590037339F /* TimeZoneListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeZoneListItemView.swift; sourceTree = "<group>"; };
 		F26646D623B74EBC0037339F /* TimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeView.swift; sourceTree = "<group>"; };
+		F26646DA23B75F590037339F /* TimeZoneSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeZoneSelectionView.swift; sourceTree = "<group>"; };
+		F26646DC23B76B730037339F /* TimeZone+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeZone+Extensions.swift"; sourceTree = "<group>"; };
+		F26646DE23B818010037339F /* SearchField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchField.swift; sourceTree = "<group>"; };
+		F2B8421823B8309B004FAC3F /* TimeZone+Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeZone+Identifiable.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +70,10 @@
 		F26646BD23B744AE0037339F /* CopyClock */ = {
 			isa = PBXGroup;
 			children = (
+				F2B8421823B8309B004FAC3F /* TimeZone+Identifiable.swift */,
+				F26646DC23B76B730037339F /* TimeZone+Extensions.swift */,
+				F26646DE23B818010037339F /* SearchField.swift */,
+				F26646DA23B75F590037339F /* TimeZoneSelectionView.swift */,
 				F26646D223B7451B0037339F /* WorldClockListView.swift */,
 				F26646D423B747590037339F /* TimeZoneListItemView.swift */,
 				F26646D623B74EBC0037339F /* TimeView.swift */,
@@ -155,7 +167,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2B8421923B8309B004FAC3F /* TimeZone+Identifiable.swift in Sources */,
+				F26646DF23B818010037339F /* SearchField.swift in Sources */,
+				F26646DB23B75F590037339F /* TimeZoneSelectionView.swift in Sources */,
 				F26646D323B7451B0037339F /* WorldClockListView.swift in Sources */,
+				F26646DD23B76B730037339F /* TimeZone+Extensions.swift in Sources */,
 				F26646D523B747590037339F /* TimeZoneListItemView.swift in Sources */,
 				F26646BF23B744AE0037339F /* AppDelegate.swift in Sources */,
 				F26646C123B744AE0037339F /* SceneDelegate.swift in Sources */,

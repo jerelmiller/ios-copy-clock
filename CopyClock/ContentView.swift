@@ -9,11 +9,17 @@
 import SwiftUI
 
 struct ContentView: View {
-  let date = Date()
+  @State private var timer: Timer?
+  @State private var now = Date()
+  @State private var timeZones = [TimeZone]()
 
   var body: some View {
     TabView {
-      WorldClockListView(date: self.date, timeZones: [TimeZone.current])
+      WorldClockListView(
+        date: self.now,
+        timeZones: $timeZones,
+        onSelect: { timeZone in self.timeZones.append(timeZone) }
+      )
         .tabItem {
           Image(systemName: "globe")
           Text("World Clock")
@@ -44,6 +50,18 @@ struct ContentView: View {
       }
     }
     .accentColor(Color.orange)
+    .onAppear(perform: createTimer)
+    .onDisappear(perform: stopTimer)
+  }
+  
+  func createTimer() {
+    timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { _ in
+      self.now = Date()
+    }
+  }
+  
+  func stopTimer() {
+    timer?.invalidate()
   }
 }
 

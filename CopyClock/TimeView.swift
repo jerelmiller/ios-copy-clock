@@ -15,7 +15,7 @@ struct TimeView: View {
   var time: String {
     let dateFormatter = DateFormatter()
     dateFormatter.timeZone = timeZone
-    dateFormatter.dateFormat = "H:mm"
+    dateFormatter.dateFormat = "h:mm"
     
     return dateFormatter.string(from: date)
   }

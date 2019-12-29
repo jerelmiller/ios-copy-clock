@@ -20,6 +20,11 @@
 		F26646DD23B76B730037339F /* TimeZone+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26646DC23B76B730037339F /* TimeZone+Extensions.swift */; };
 		F26646DF23B818010037339F /* SearchField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26646DE23B818010037339F /* SearchField.swift */; };
 		F2B8421923B8309B004FAC3F /* TimeZone+Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B8421823B8309B004FAC3F /* TimeZone+Identifiable.swift */; };
+		F2B8421B23B871AF004FAC3F /* AlarmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B8421A23B871AF004FAC3F /* AlarmView.swift */; };
+		F2B8421D23B875D6004FAC3F /* AlarmItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B8421C23B875D6004FAC3F /* AlarmItemView.swift */; };
+		F2B8421F23B87992004FAC3F /* Alarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B8421E23B87992004FAC3F /* Alarm.swift */; };
+		F2B8422323B88898004FAC3F /* AlarmForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B8422223B88898004FAC3F /* AlarmForm.swift */; };
+		F2B8422523B889B3004FAC3F /* TimePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B8422423B889B3004FAC3F /* TimePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +43,11 @@
 		F26646DC23B76B730037339F /* TimeZone+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeZone+Extensions.swift"; sourceTree = "<group>"; };
 		F26646DE23B818010037339F /* SearchField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchField.swift; sourceTree = "<group>"; };
 		F2B8421823B8309B004FAC3F /* TimeZone+Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeZone+Identifiable.swift"; sourceTree = "<group>"; };
+		F2B8421A23B871AF004FAC3F /* AlarmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmView.swift; sourceTree = "<group>"; };
+		F2B8421C23B875D6004FAC3F /* AlarmItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmItemView.swift; sourceTree = "<group>"; };
+		F2B8421E23B87992004FAC3F /* Alarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alarm.swift; sourceTree = "<group>"; };
+		F2B8422223B88898004FAC3F /* AlarmForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmForm.swift; sourceTree = "<group>"; };
+		F2B8422423B889B3004FAC3F /* TimePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,11 +80,16 @@
 		F26646BD23B744AE0037339F /* CopyClock */ = {
 			isa = PBXGroup;
 			children = (
+				F2B8422223B88898004FAC3F /* AlarmForm.swift */,
+				F2B8422423B889B3004FAC3F /* TimePicker.swift */,
+				F2B8421E23B87992004FAC3F /* Alarm.swift */,
 				F2B8421823B8309B004FAC3F /* TimeZone+Identifiable.swift */,
 				F26646DC23B76B730037339F /* TimeZone+Extensions.swift */,
 				F26646DE23B818010037339F /* SearchField.swift */,
 				F26646DA23B75F590037339F /* TimeZoneSelectionView.swift */,
 				F26646D223B7451B0037339F /* WorldClockView.swift */,
+				F2B8421A23B871AF004FAC3F /* AlarmView.swift */,
+				F2B8421C23B875D6004FAC3F /* AlarmItemView.swift */,
 				F26646D423B747590037339F /* TimeZoneListItemView.swift */,
 				F26646D623B74EBC0037339F /* TimeView.swift */,
 				F26646BE23B744AE0037339F /* AppDelegate.swift */,
@@ -174,9 +189,14 @@
 				F26646DD23B76B730037339F /* TimeZone+Extensions.swift in Sources */,
 				F26646D523B747590037339F /* TimeZoneListItemView.swift in Sources */,
 				F26646BF23B744AE0037339F /* AppDelegate.swift in Sources */,
+				F2B8421B23B871AF004FAC3F /* AlarmView.swift in Sources */,
+				F2B8421F23B87992004FAC3F /* Alarm.swift in Sources */,
+				F2B8422523B889B3004FAC3F /* TimePicker.swift in Sources */,
 				F26646C123B744AE0037339F /* SceneDelegate.swift in Sources */,
+				F2B8421D23B875D6004FAC3F /* AlarmItemView.swift in Sources */,
 				F26646C323B744AE0037339F /* ContentView.swift in Sources */,
 				F26646D723B74EBC0037339F /* TimeView.swift in Sources */,
+				F2B8422323B88898004FAC3F /* AlarmForm.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

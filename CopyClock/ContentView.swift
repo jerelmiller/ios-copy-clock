@@ -12,6 +12,7 @@ struct ContentView: View {
   @State private var timer: Timer?
   @State private var now = Date()
   @State private var timeZones = [TimeZone]()
+  @State private var alarms = [Alarm]()
 
   var body: some View {
     TabView {
@@ -25,7 +26,7 @@ struct ContentView: View {
           Text("World Clock")
         }
 
-      Text("Alarm")
+      AlarmView(alarms: $alarms)
         .tabItem {
           Image(systemName: "alarm.fill")
           Text("Alarm")

@@ -10,8 +10,8 @@ import SwiftUI
 
 struct TimeView: View {
   let date: Date
-  let timeZone: TimeZone
-  
+  var timeZone = TimeZone.current
+
   var time: String {
     let dateFormatter = DateFormatter()
     dateFormatter.timeZone = timeZone
@@ -32,10 +32,8 @@ struct TimeView: View {
     Text(time)
       .font(Font.system(size: 60))
       .fontWeight(.light)
-      .foregroundColor(Color.primary)
     + Text(amPm)
       .font(Font.system(size: 30))
-      .foregroundColor(Color.primary)
   }
 }
 
